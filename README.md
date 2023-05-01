@@ -267,7 +267,7 @@ const { blok } = Astro.props
 const renderedRichText = renderRichText(blok.text)
 ---
 
-<div set:html="{renderedRichText}"></div>
+<div set:html={renderedRichText}></div>
 ```
 
 You can also set a **custom Schema and component resolver** by passing the options as the second parameter of the `renderRichText` function:
